@@ -51,7 +51,7 @@ export default {
 The only required attribute is a `data` array.
 
 ```html
-<vue-bootstrap-typeahead 
+<vue-bootstrap-typeahead
   v-model="query"
   :data="['Canada', 'USA', 'Mexico']"
 />
@@ -126,6 +126,12 @@ Name | Description
 --- | ---
 `hit` | Triggered when an autocomplete item is selected. The entry in the input `data` array that was selected is returned.
 `input` | The component can be used with `v-model`
+`keyup` | Generic `keyup` event for the contained input element
+
+### Methods
+Name | Description
+--- | ---
+setFocus | Set focus on the contained input element
 
 ### Slots
 
@@ -157,10 +163,6 @@ for the suggestion `list-item`'s
 Clone this repository and run `npm run serve` and navigate to http://localhost:8080 to launch the documentation. The source is in `src/views/Home.vue`
 
 You can also view and edit examples hosted on CodePen [here](https://alexurquhart.github.io/vue-bootstrap-typeahead/#/examples)
-
-## Contributing
-
-Please note that active development is done on the `Development` branch. PR's are welcome!
 
 ## Contributing
 

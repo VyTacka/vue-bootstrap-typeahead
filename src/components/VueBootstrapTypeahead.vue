@@ -74,8 +74,8 @@ export default {
       type: String
     },
     disabled: {
-     type: Boolean,
-     default: false
+      type: Boolean,
+      default: false
     },
     data: {
       type: Array,
@@ -174,8 +174,8 @@ export default {
     },
 
     setFocus() {
-      this.$refs.input.focus();
-      this.isFocused = true;
+      this.$refs.input.focus()
+      this.isFocused = true
     }
   },
 

@@ -29,3 +29,13 @@
 
 ## 0.2.6 - 30 Sept 2018
 - Fixed `maxMatches` bug. Thanks to @jimfisher
+
+## 0.2.? - April 2019
+- Summary of merged PRs:
+  - #34 - disabled property
+  - #47 - minMatchingChars = 0
+  - #32 - fix for replace on null
+  - #29 - keyboard navigation
+  - #21 - initial set value, watch for updates
+- Added setFocus method
+- Added keyup event
