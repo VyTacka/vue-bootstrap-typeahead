@@ -39,6 +39,7 @@
       :text-variant="textVariant"
       :maxMatches="maxMatches"
       :minMatchingChars="minMatchingChars"
+      :rawResults="rawResults"
       @hit="handleHit"
     >
       <!-- pass down all scoped slots -->
@@ -103,7 +104,8 @@ export default {
     },
     placeholder: String,
     prepend: String,
-    append: String
+    append: String,
+    rawResults: Boolean
   },
 
   computed: {

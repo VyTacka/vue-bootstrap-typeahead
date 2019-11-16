@@ -57,6 +57,9 @@ export default {
     minMatchingChars: {
       type: Number,
       default: 2
+    },
+    rawResults: {
+      type: Boolean
     }
   },
 
@@ -97,6 +100,10 @@ export default {
 
       if (this.query && (this.query.length === 0 || this.query.length < this.minMatchingChars)) {
         return []
+      }
+
+      if (this.rawResults) {
+        return this.data
       }
 
       const re = new RegExp(this.escapedQuery, 'gi')
